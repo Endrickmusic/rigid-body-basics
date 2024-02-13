@@ -1,2 +1,2 @@
-# temp-vite-0124
-new template / vite / r3f / drei / leva
+# basic rigid bodys with rapier
+vite / r3f / drei / leva / rapier
