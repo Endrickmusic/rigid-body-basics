@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
+import { Physics } from '@react-three/rapier'
 
 import './App.css'
 
@@ -16,7 +17,11 @@ function App() {
       fov: 40 }}  
     >
       <color attach="background" args={['#b1a3c2']} />
-      <Cube />
+      <Suspense>  
+        <Physics>
+          <Cube />
+        </Physics>
+      </Suspense>
     </Canvas>
   </>
   )
